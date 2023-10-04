@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="script.js"></script>
+    <title>Lab Forms</title>
+</head>
+<body>
+    <h4>Formulários</h4>
+    <form onsubmit="onFormSubmit(event)">
+        <label for="ipt-nome">Nome:</label>
+        <input id="ipt-nome" type="text" name="nome" onchange="onNomeChange(event)" />
+        <br />
+        <br />
+        <label for="ipt-nascimento">Nascimento:</label>
+        <input id="ipt-nascimento" type="text" name="nascimento" />
+        <br />
+        <br />
+        <label>Sexo:</label>
+        <input id="rad-sexo-m" type="radio" value="M"  name="sexo" /> <label for="rad-sexo-m">Masculino</label>
+        <input id="rad-sexo-f" type="radio" value="F"  name="sexo" /> <label for="rad-sexo-f">Feminino</label>
+        <br />
+        <br />
+        <label>Linguagens:</label>
+        <br />
+        <input id="chk-html" value="html" name="linguagens" type="checkbox" />
+        <label for="chk-html">HTML</label>
+        <br />
+        <input id="chk-css" value="css" name="linguagens" type="checkbox" />
+        <label for="chk-css">CSS</label>
+        <br />
+        <input id="chk-javascript" value="javascript" name="linguagens" type="checkbox" />
+        <label for="chk-javascript">Javascript</label>
+        <br />
+        <input id="chk-csharp" value="csharp" name="linguagens" type="checkbox" />
+        <label for="chk-csharp">C#</label>
+        <br />
+        <br />
+        <br />
+        <label for="slc-profissao">Profissão:</label>
+        <select id="slc-profissao" name="profissao">
+            <option>Selecione...</option>
+            <option value="dev">Desenvlvedor</option>
+            <option value="dba">DBA</option>
+            <option value="scm">Scrum Master</option>
+        </select>
+        <br />
+        <br />
+        <button id="btn-salvar">Salvar</button>
+    </form>
+</body>
+</html>
